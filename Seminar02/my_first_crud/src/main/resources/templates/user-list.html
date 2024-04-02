@@ -2,19 +2,22 @@
 <html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Users</title>
 </head>
 <body>
-<div th:switch="${users}">
+<div class="form-block" th:switch="${users}">
     <h2 th:case="null">No users found!</h2>
     <div th:case="*">
         <h2>Users</h2>
-        <table>
+        <table class="table table-bordered">
             <thead>
             <tr>
                 <th>Id</th>
                 <th>First name</th>
                 <th>Last name</th>
+                <th></th>
             </tr>
             </thead>
             <tbody>
@@ -22,13 +25,18 @@
                 <td th:text="${user.id}"></td>
                 <td th:text="${user.firstName}"></td>
                 <td th:text="${user.lastName}"></td>
-                <td><a th:href="@{user-update/{id}(id=${user.id})}">Edit</a></td>
-                <td><a th:href="@{user-delete/{id}(id=${user.id})}">Delete</a></td>
+                <td><a class="btn btn-success" th:href="@{user-update/{id}(id=${user.id})}"
+                       title="Изменить пользователя">E</a>&nbsp;
+                    <a class="btn btn-danger" th:href="@{user-delete/{id}(id=${user.id})}"
+                       title="Удалить пользователя">X</a></td>
             </tr>
             </tbody>
         </table>
     </div>
-    <p><a href="/user-create">Create user</a></p>
+    <p>
+        <a class="btn btn-primary" href="/user-create">Добавить пользователя</a>
+    </p>
 </div>
+<script src="js/bootstrap.min.js"></script>
 </body>
 </html>

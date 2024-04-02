@@ -1,4 +1,4 @@
-package org.example.domain;
+package ru.gb.domain;
 
 public class Car {
 
@@ -20,4 +20,12 @@ public class Car {
     public void setMade(String made) {
         this.made = made;
     }
+
+//    @Override
+//    public String toString() {
+//        return "Car{" +
+//                "model='" + model + '\'' +
+//                ", made='" + made + '\'' +
+//                '}';
+//    }
 }
