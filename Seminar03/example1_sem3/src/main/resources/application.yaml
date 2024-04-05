@@ -1,0 +1,4 @@
+#spring.application.name=example1_sem3
+#server.port = 12345
+server:
+  port: 12345

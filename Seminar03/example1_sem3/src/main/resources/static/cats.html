@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cat Gif</title>
+</head>
+
+<body>
+<div class="container">
+  <h1>This is a random image of a cat!</h1>
+</div>
+
+<script>
+        let container = document.querySelector(".container");
+        async function apiFunction() {
+            await fetch("https://api.thecatapi.com/v1/images/search")
+                .then(res => res.json())
+                .then((result) => {
+                    //items = result;
+                    let img = document.createElement("img");
+                    img.src = result[0].url;
+                    container.appendChild(img);
+                }),
+                (error) => {
+                    console.log(error);
+                }
+        }
+        // Call the function
+        apiFunction();
+    </script>
+</body>
+
+</html>
