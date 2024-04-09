@@ -1,7 +1,7 @@
 # Spring6145
 the repository of the spring framework course
 
-# Seminar 1 Maven Gradlr
+# Seminar 1 Maven Gradle
 example1_sem1 - simple example created from CMD mvn
 
 example2_sem1 - simple example created from CMD gradle
@@ -29,6 +29,13 @@ example1_sem3 - simple example created web application (home, cats, game)
 example2_sem3 - simple example created rest + postman
 
 example3_sem3 - simple example created rest point home task
+
+# Seminar 4 Spring MVC (Thymeleaf)
+example1_sem4 - simple example about MVC
+
+example2_sem4 - simple example random numbre 
+
+example3_sem4 - simple example product DB
 
 
 
