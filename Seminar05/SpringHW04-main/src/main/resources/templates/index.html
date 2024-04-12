@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Contacts list</title>
+</head>
+<body style="padding: 20px">
+    <h1 style="text-align: center">Contacts list</h1>
+    <table class="table table-striped table-hover" style="padding: 20px">
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Phone</th>
+            <th>E-Mail</th>
+            <th>Notes</th>
+        </tr>
+        <tr th:each="p: ${persons}" >
+            <td th:text="${p.getId()}"></td>
+            <td th:text="${p.getName()}"></td>
+            <td th:text="${p.getPhone()}"></td>
+            <td th:text="${p.getEmail()}"></td>
+            <td th:text="${p.getNote()}"></td>
+            <td>
+                <form th:method="GET" th:action="@{/delete/{id}(id=${p.getId()})}">
+                    <button type="submit" class="btn btn-primary">Delete</button>
+                </form>
+            </td>
+            <td>
+                <form th:method="GET" th:action="@{/update/{id}(id=${p.getId()})}">
+                    <button type="submit" class="btn btn-primary">Edit</button>
+                </form>
+            </td>
+        </tr>
+    </table>
+    <form th:method="GET" th:action="@{/new}">
+        <button type="submit" class="btn btn-primary">Add new person</button>
+    </form>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>

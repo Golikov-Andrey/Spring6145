@@ -37,5 +37,12 @@ example2_sem4 - simple example random numbre
 
 example3_sem4 - simple example product DB
 
+# Seminar 5 Spring DATA 
+example1_sem5 - example spring data JDBC 
 
+example2_sem5 - example spring data JPA 
+
+example3_sem5 - example multi table 
+
+SpringHW04-main - example strong homework from seminar4
 

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit person</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+<div style="max-width: 480px; padding: 20px" >
+    <h1>Edit person</h1>
+    <div class="container-sm" style="border: black solid 1px; padding: 20px" >
+        <form th:method="POST" th:action="@{/update}" th:object="${person}">
+            <div class="mb-3">
+                <label for="id" class="form-label">ID: </label>
+                <input readonly type="number" class="form-control" th:field="*{id}" id="id" />
+            </div>
+            <div class="mb-3">
+                <label for="name" class="form-label">Name: </label>
+                <input type="text" class="form-control" th:field="*{name}" id="name" />
+                <div style="color:red;" th:if="${#fields.hasErrors('name')}" th:errors="*{name}"></div>
+            </div>
+            <div class="mb-3">
+                <label for="phone" class="form-label">Phone: </label>
+                <input type="text" class="form-control" th:field="*{phone}" id="phone" />
+                <div style="color:red;" th:if="${#fields.hasErrors('phone')}" th:errors="*{phone}"></div>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email </label>
+                <input type="email" class="form-control" th:field="*{email}" id="email" />
+                <div style="color:red;" th:if="${#fields.hasErrors('email')}" th:errors="*{email}"></div>
+            </div>
+            <div class="mb-3">
+                <label for="note" class="form-label">Notes</label>
+                <textarea rows="3" type="text" class="form-control" th:field="*{note}" id="note"></textarea>
+            </div>
+            <a href="/"><button type="button" class="btn btn-primary">Back</button></a>
+            <button type="submit" class="btn btn-primary">Done</button>
+        </form>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
