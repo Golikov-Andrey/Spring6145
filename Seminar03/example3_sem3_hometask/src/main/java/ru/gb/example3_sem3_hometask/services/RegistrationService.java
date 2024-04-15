@@ -19,9 +19,9 @@ public class RegistrationService {
         return dataProcessingService;
     }
 
-    public void processRegistration(String username, int age, String email) {
+    public void processRegistration(String name, int age, String email) {
 
-        User user = new User(username, age, email);
+        User user = new User(name, age, email);
 
         userService.addUser(user);
 
