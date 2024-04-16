@@ -1,0 +1,59 @@
+.task{
+background-color: #8080801f;
+    padding: 2px 10px;
+    border-radius: 5px;
+}
+
+.complete {
+    color: grey;
+    padding: 2px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+h1{
+margin-bottom: 30px;
+}
+
+.complete:hover {
+    color: blue;
+}
+
+table {
+border: 1px solid black;
+margin-top: 50px;
+}
+
+.task-margin{
+margin-top: 10px;
+margin-bottom: 10px;
+}
+
+.new-task {
+        padding: 2px 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        text-decoration: none;
+        color: white;
+        background-color: #a66eff;
+}
+
+.new-task:hover {
+        color: white;
+}
+
+a{
+text-decoration:none;
+}
+
+.container {
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.done {
+background-color: #78ff001f;
+}
+.doing{
+    background-color: #ffbb001f;
+}

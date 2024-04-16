@@ -46,3 +46,15 @@ example3_sem5 - example multi table
 
 SpringHW04-main - example strong homework from seminar4
 
+# Seminar 6 Spring API 
+example1_sem6 - example spring API REST EndPoint one class 
+
+example2_sem6 - example spring API REST EndPoint two classes 
+
+example3_sem6_RickAmdMortiAPI - base example for hard task
+
+HomeWorkSpring_05-master - example task from ilya bunakov
+
+Scrum-board - example scrum board
+
+

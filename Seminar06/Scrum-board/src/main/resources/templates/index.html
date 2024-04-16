@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Scrum board</title>
+</head>
+<body>
+
+<div class="container">
+
+    <h1 class="main-title">Scrum board</h1>
+
+    <table class="table table-hover">
+        <thead class="table-dark">
+        <tr>
+            <th>Worker</th>
+            <th>TO DO</th>
+            <th>DOING</th>
+            <th>DONE</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        <tr th:each="user : ${users}">
+            <td>
+                <span>[<strong th:text="${user.id}" class="id-user"></strong>]: </span>
+                <span th:text="${user.firstName}"></span>
+            </td>
+
+
+            <td>
+                <div th:each="task : ${user.task}" class="task-margin">
+                    <div th:if="${task.taskToString() == 'TO_DO'}">
+                        <div class="task">
+                            <p>
+                                <strong th:text="${task.title}"></strong>
+                                : <span th:text="${task.description}"> </span>
+                                <br>
+                                Created: <span th:text="${task.date.getYear()}"></span>.<span th:text="${task.date.getMonthValue()}"></span>.<span th:text="${task.date.getDayOfMonth()}"></span>
+                                / Time: <span th:text="${task.date.getHour}"></span>:<span th:text="${task.date.getMinute}"></span>
+                            </p>
+                        </div>
+                        <a class="complete" th:href="@{/task-doing/{id}(id=${task.id})}" type="button">doing</a>
+                        <a class="complete" th:href="@{/edit-task/{id}(id=${task.id})}" type="button">edit</a>
+                        <a class="complete" th:href="@{/task-delete/{id}(id=${task.id})}" type="button">remove</a>
+                    </div>
+                </div>
+            </td>
+
+            <td>
+                <div th:each="task : ${user.task}" class="task-margin">
+                    <div th:if="${task.taskToString() == 'DOING'}">
+                        <div class="task doing">
+                            <p>
+                                <strong th:text="${task.title}"></strong>
+                                : <span th:text="${task.description}"> </span>
+                                <br>
+                                Created: <span th:text="${task.date.getYear()}"></span>.<span th:text="${task.date.getMonthValue()}"></span>.<span th:text="${task.date.getDayOfMonth()}"></span>
+                                / Time: <span th:text="${task.date.getHour}"></span>:<span th:text="${task.date.getMinute}"></span>
+                            </p>
+                        </div>
+                        <a class="complete" th:href="@{/task-done/{id}(id=${task.id})}" type="button">done</a>
+                        <a class="complete" th:href="@{/edit-task/{id}(id=${task.id})}" type="button">edit</a>
+                        <a class="complete" th:href="@{/task-delete/{id}(id=${task.id})}" type="button">remove</a>
+                        <a class="complete" th:href="@{/task-todo/{id}(id=${task.id})}" type="button">to do</a>
+                    </div>
+                </div>
+            </td>
+
+            <td>
+                <div th:each="task : ${user.task}" class="task-margin">
+                    <div th:if="${task.taskToString() == 'DONE'}">
+                        <div class="task done">
+                            <p>
+                                <strong th:text="${task.title}"></strong>
+                                : <span th:text="${task.description}"> </span>
+                                <br>
+                                Created: <span th:text="${task.date.getYear()}"></span>.<span th:text="${task.date.getMonthValue()}"></span>.<span th:text="${task.date.getDayOfMonth()}"></span>
+                                / Time: <span th:text="${task.date.getHour}"></span>:<span th:text="${task.date.getMinute}"></span>
+                            </p>
+                        </div>
+                        <a class="complete" th:href="@{/task-doing/{id}(id=${task.id})}" type="button">doing</a>
+                        <a class="complete" th:href="@{/task-delete/{id}(id=${task.id})}" type="button">remove</a>
+                    </div>
+                </div>
+            </td>
+
+
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+<!---->
+
+<div class="container">
+
+    <h1 class="main-title">All workers list</h1>
+
+    <table class="table table-hover">
+        <thead class="table-secondary">
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Count tasks</th>
+            <th></th>
+        </tr>
+        </thead>
+
+        <tbody>
+        <tr th:each="user : ${users}">
+
+            <td>
+                <strong th:text="${user.id}" class="id-user"></strong>
+            </td>
+
+            <td th:text="${user.firstName}"></td>
+
+            <td th:text="${user.Email}"></td>
+
+            <td th:text="${user.task.size()}"></td>
+
+            <td><a class="new-task" th:href="@{/task-create/{id}(id=${user.id})}" type="button">give new task</a></td>
+
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+</body>
+</html>

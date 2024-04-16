@@ -1,0 +1,72 @@
+@keyframes color {
+    0%   { background: #2caefe; }
+    20%  { background: #b5d214; }
+    40%  { background: #d99b1f; }
+    60%  { background: #9a601f; }
+    80%  { background: #f5744d; }
+    100% { background: #a6cc33; }
+}
+
+body {
+    background: #33CCCC;
+    animation: color 9s infinite linear;
+    text-align: center;
+    padding: 2em;
+}
+
+.fixed-panel {
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+}
+
+.scrollable-panel {
+    flex: 1;
+    overflow-x: hidden;
+}
+
+.card {
+    padding: 15px;
+    /*box-shadow: 0px 0px 10px 0px rgb(255 209 0) inset, 0px 0px 20px 0px rgb(255 209 0 / 95%);*/
+    -webkit-box-shadow: 0px 20px 20px -17px rgba(255, 209, 0, 0.53);
+    -moz-box-shadow: 0px 20px 20px -17px rgba(255, 209, 0, 0.53);
+    box-shadow: 0px 20px 20px -17px rgba(255, 209, 0, 0.53);
+    transition: all 0.3s;
+}
+
+.card:hover {
+    background-color: #fafafa;
+    transform: translateY(-5px);
+    -webkit-box-shadow: 0px 20px 35px -16px rgba(255, 209, 16, 0.6);
+    -moz-box-shadow: 0px 20px 35px -16px rgba(255, 209, 16, 0.6);
+    box-shadow: 0px 20px 35px -16px rgba(255, 209, 16, 0.6);
+    transition: all 0.3s;
+}
+
+.form-block {
+    width: 500px;
+    height: max-content;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: #fff;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.formarea{
+    height: 400px;
+    width: 460px;
+}
+.btn{
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+    margin-right: 10px;
+    transition: all 0.3s;
+}

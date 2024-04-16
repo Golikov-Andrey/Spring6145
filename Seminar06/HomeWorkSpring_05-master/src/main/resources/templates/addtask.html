@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/jquery-3.7.1.min.js"></script>
+    <title>Добавление задачи</title>
+</head>
+<body>
+<div class="form-block">
+    <h3>Добавление задачи</h3>
+    <div class="row-cols-3">
+        <form action="/addtask" method="POST">
+            <label for="description" class="form-label">Введите задачу:</label>
+            <textarea id="description" name="description" required class="form-control formarea"></textarea>
+            <p class="btn-group mt-3"><input type="submit" value="Создать" class="btn btn-success">
+                <a href="/" class="btn btn-primary">Назад</a></p>
+        </form>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/jquery-3.7.1.min.js"></script>
+    <title>Список задач</title>
+</head>
+
+<body>
+    <div class="container">
+            <div class="row">
+                <div class="col-6 mx-auto">
+                    <h1>Загрузить файл CSV с задачами</h1>
+                    <form method="POST" th:action="@{/upload}" enctype="multipart/form-data">
+                        <div class="form-group mt-3">
+                            <input type="file" name="file" class="form-control-file btn btn-primary" id="file" accept=".csv">
+                        </div>
+                        <button type="submit" class="btn btn-success">Загрузить...</button>
+                    </form>
+                </div>
+            </div>
+        <nav class="navbar navbar-default navbar-fixed-bottom">
+            <div class="input-group mb-6">
+                <a href="/addtask" class="btn btn-primary"><span title="Добавить новую задачу">Добавить задачу</span></a>
+                <div class="d-flex justify-content-end">
+                    <select id="filter-select" class="d-inline" onchange="setFilter()"
+                            title="Фильтр отображения списка задач">
+                        <option id="filter-all" value="all">Все</option>
+                        <option id="filter-nostart" value="nostart">Не выполняются</option>
+                        <option id="filter-inwork" value="inwork">Выполняются</option>
+                        <option id="filter-ready" value="ready">Завершенные</option>
+                    </select>
+                </div>
+
+                <script th:inline="javascript">
+                    window.onload = function () {
+                        const selector = "filter-" + [[${filter}]];
+                        const index = document.getElementById(selector).index;
+                        document.getElementById("filter-select").selectedIndex = index;
+                    }
+                    function setFilter() {
+                        const filter = document.getElementById('filter-select').value;
+                        window.location.href = '/' + '?filter=' + filter;
+                    }
+                </script>
+
+            </div>
+        </nav>
+        <div class="col-12 col-md-12 scrollable-panel">
+            <div class="row">
+                <div th:each="task : ${tasks}" class="col-sm-4">
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <p class="card-text"><strong><span th:text="${task.getDescription()}"></span></strong></p>
+                            <p class="card-text">Статус: <span th:text="${task.getStatusWeb()}"></span></p>
+                            <p class="card-text">Дата: <span
+                                    th:text="${#temporals.format(task.getCreatedDate(), 'yyyy-MM-dd HH:mm:ss')}"></span>
+                            </p>
+                            <a class="btn btn-danger" href="" th:href="@{'/deltask/'+${task.getId()}}">Закрыть</a>
+                            <a class="btn btn-success" href="" th:href="@{'/upd/'+${task.getId()}}">Сменить
+                                статус</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
