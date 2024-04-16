@@ -33,7 +33,7 @@
 
 ## На основе проекта показанного на семинаре разработать сайт:
 
-https://rickandmortyapi.com/api/character/avatar/330.jpeg
+![Alt text](https://rickandmortyapi.com/api/character/avatar/330.jpeg)
 
 - Отображающий список героев мультсериала Rick and Morty(с картинками)
 - При выборе героя отобразить карточку товара с персонажем(с картинкой)
