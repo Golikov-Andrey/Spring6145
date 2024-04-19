@@ -3,7 +3,9 @@
 
 **Внимание** ДЗ выполнять в версии SpringBoot:**3.2.5**(на основе example4_sem7)
 
-## Вам необходимо создать Spring Boot приложение, которое управляет доступом к ресурсам в зависимости от роли пользователя. У вас должно быть два типа пользователей: USER и ADMIN. 
+## Вам необходимо создать Spring Boot приложение
+
+Приложение, которое управляет доступом к ресурсам в зависимости от роли пользователя. У вас должно быть два типа пользователей: USER и ADMIN. 
 
 1. Создайте ресурс /private-data, доступный только для аутентифицированных пользователей с ролью ADMIN
 2. Создайте ресурс /public-data, доступный для всех аутентифицированных пользователей независимо от их роли
@@ -50,6 +52,34 @@
 
 Логин: **user**, пароль: **password**
 
+Подсказки:
+
+- для сервера аутентификации
+
+```
+<dependency>
+<groupId>org.springframework.boot</groupId>
+<artifactId>spring-boot-starter-oauth2-resource-server</artifactId>
+</dependency>
+```
+
+- для сервера ресурсов
+
+```
+<dependency>
+<groupId>org.springframework.boot</groupId>
+<artifactId>spring-boot-starter-oauth2-authorization-server</artifactId>
+</dependency>
+```
+
+- для клиента системы
+
+```
+<dependency>
+<groupId>org.springframework.boot</groupId>
+<artifactId>spring-boot-starter-oauth2-client</artifactId>
+</dependency>
+```
 
 
 
