@@ -1,0 +1,24 @@
+server:
+  port: 8080
+spring:
+  output.ansi.enabled: ALWAYS
+  security:
+    oauth2:
+      client:
+        provider:
+          spring:
+            issuer-uri: http://localhost:8079
+        registration:
+          reg-client:
+            provider: spring
+            client-id: client
+            client-secret: "secret"
+            authorization-grant-type: authorization_code
+            client-authentication-method: client_secret_basic
+            redirect-uri: "{baseUrl}/login/oauth2/code/{registrationId}"
+            scope: user.read,openid
+logging:
+  level:
+    org:
+      springframework:
+        security: trace
