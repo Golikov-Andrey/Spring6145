@@ -1,0 +1,23 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: payment
+
+  jpa:
+    generate-ddl: false
+    hibernate:
+      ddl-auto: none
+
+  profiles:
+    active: eclient
+
+  config:
+    import: configserver:http://localhost:8888
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: metrics,prometheus

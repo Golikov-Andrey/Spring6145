@@ -60,3 +60,10 @@ the repository of the spring framework course
 - example3_sem8 - example spring HTTP interceptor
 - example4_sem8 - example spring OAUTH2 
 
+# Seminar 9 Spring Cloud 
+***
+- CloudExample - example spring eureka + gateway
+- CloudExampleWhithAllModules - example cloud all moduls 
+- OpenFeignExample - example openfeign
+- HardHomeWorkSeminar8 - example hard work seminar 8 
+
