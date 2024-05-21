@@ -1,0 +1,1 @@
+Боррель поддержал решение Совета ЕС использовать активы России для Украины Семен Александров https://lenta.ru/news/2024/05/21/borrel-podderzhal-reshenie-soveta-es-ispolzovat-aktivy-rossii-dlya-ukrainy/

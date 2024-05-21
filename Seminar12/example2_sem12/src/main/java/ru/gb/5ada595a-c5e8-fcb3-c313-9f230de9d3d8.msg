@@ -1,0 +1,1 @@
+В Думе предложили списывать кредиты россиян на поврежденные из-за бомбежек вещи Влада Горячева https://lenta.ru/news/2024/05/21/v-dume-predlozhili-spisyvat-kredity-rossiyan-na-povrezhdennye-iz-za-bombezhek-veschi/

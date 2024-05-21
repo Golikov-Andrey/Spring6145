@@ -1,0 +1,1 @@
+Глава Николаевской области рассказал об опустевших из-за мобилизации улицах Валентин Карант https://lenta.ru/news/2024/05/21/glava-nikolaevskoy-oblasti-rasskazal-ob-opustenii-ulits-iz-za-mobilizatsii/

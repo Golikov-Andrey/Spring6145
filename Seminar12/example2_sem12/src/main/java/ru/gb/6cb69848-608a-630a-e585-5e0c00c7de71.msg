@@ -1,0 +1,1 @@
+Германия назвала участием в конфликте сбивание российских ракет над Украиной Виктория Кондратьева https://lenta.ru/news/2024/05/21/germaniya-nazvala-uchastiem-v-konflikte-sbitie-rossiyskih-raket-nad-ukrainoy/

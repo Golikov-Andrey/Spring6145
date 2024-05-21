@@ -1,0 +1,1 @@
+Адвокат бывшего командующего 58-й армией ВС России заявил о его невиновности Олеся Мицкевич https://lenta.ru/news/2024/05/21/advokat-byvshego-komanduyuschego-58-y-armiey-vs-rossii-zayavil-o-ego-nevinovnosti/

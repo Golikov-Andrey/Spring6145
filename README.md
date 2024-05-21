@@ -72,3 +72,20 @@ the repository of the spring framework course
 - example1_sem1 - example module and integration test
 - GetAccount.jmx - configuration file for JMETER
 
+# Seminar 11 Spring Prometheus Grafana 
+***
+- Note-H2-master - example whith monitoring
+
+- Grafana 11 version for Windows [a link](https://disk.yandex.ru/d/HUIDbnzgzHFxFQ)
+- nssm 2.24 version for Windows [a link](https://disk.yandex.ru/d/mBtEzqwd_8agTQ)
+- prometheus 2.52 version for Windows [a link](https://github.com/prometheus/prometheus/releases/download/v2.52.0/prometheus-2.52.0.windows-amd64.zip)
+
+# Seminar 12 Spring Integration 
+***
+- example1_sem12 - example integration save task in file
+- example2_sem12 - example integration save rss in file
+- example3_Adapter - example pattern Adapter
+- example4_Decorator - example pattern Decorator
+- example5_Fabric - example pattern Fabric
+- example6_Observer - example pattern Observer
+

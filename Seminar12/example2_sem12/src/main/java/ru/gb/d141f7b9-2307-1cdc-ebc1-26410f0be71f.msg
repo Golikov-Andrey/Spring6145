@@ -1,0 +1,1 @@
+Продюсер оценил сотрудничество Пугачевой и поддержавшего СВО поэта Гуцериева Мария Рюрикова https://lenta.ru/news/2024/05/21/prodyuser-otsenil-sotrudnichestvo-pugachevoy-i-podderzhavshego-svo-poeta-gutserieva/

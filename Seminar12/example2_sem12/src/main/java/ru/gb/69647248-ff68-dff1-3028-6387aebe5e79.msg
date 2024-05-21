@@ -1,0 +1,1 @@
+Администрация Конотопа сообщила о повреждении производственной инфраструктуры Валентин Карант https://lenta.ru/news/2024/05/21/administratsiya-konotopa-soobschila-o-povrezhdenii-proizvodstvennoy-infrastruktury/

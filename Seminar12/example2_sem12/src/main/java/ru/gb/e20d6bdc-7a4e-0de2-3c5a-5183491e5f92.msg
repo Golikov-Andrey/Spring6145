@@ -1,0 +1,1 @@
+Солистка «Винтаж» вспомнила о застрявших в горле во время концерта конфетти Варвара Кошечкина https://lenta.ru/news/2024/05/21/solistka-vintazh-vspomnila-o-zastryavshih-v-gorle-vo-vremya-kontserta-konfetti/

@@ -1,0 +1,1 @@
+Стала известна дата рассмотрения жалобы на арест кадровика Минобороны Кузнецова Екатерина Кашурникова https://lenta.ru/news/2024/05/21/stala-izvestna-data-rassmotreniya-zhaloby-na-arest-kadrovika-minoborony-kuznetsova/

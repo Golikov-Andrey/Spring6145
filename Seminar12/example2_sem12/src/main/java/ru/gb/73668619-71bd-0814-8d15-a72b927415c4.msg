@@ -1,0 +1,1 @@
+В Киеве желающим служить в ВСУ заключенным пригрозили дополнительным сроком Екатерина Грищенко https://lenta.ru/news/2024/05/21/v-kieve-zhelayuschim-sluzhit-v-vsu-zaklyuchennym-prigrozili-dopolnitelnym-srokom/

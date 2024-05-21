@@ -1,0 +1,1 @@
+Десятки тушек птиц обнаружили после столкновения самолета со стаей фламинго Алина Черненко https://lenta.ru/news/2024/05/21/desyatki-tushek-ptits-obnaruzhili-posle-stolknoveniya-samoleta-so-staey-flamingo/

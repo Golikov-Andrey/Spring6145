@@ -1,0 +1,1 @@
+В Думе прокомментировали арест экс-командующего 58-й армией Вооруженных сил РФ Анна Щербакова https://lenta.ru/news/2024/05/21/v-dume-prokommentirovali-arest-eks-komanduyuschego-58-y-armiey-vooruzhennyh-sil-rf/

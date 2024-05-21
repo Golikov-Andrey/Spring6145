@@ -1,0 +1,1 @@
+Арестован бывший командующий 58-й армией. Почти год назад генерал заявлял о «сложной ситуации» с начальством Варвара Кошечкина https://lenta.ru/news/2024/05/21/arestovan-byvshiy-komanduyuschiy-58-y-armiey-pochti-god-nazad-general-zayavlyal-o-slozhnoy-situatsii-s-nachalstvom/

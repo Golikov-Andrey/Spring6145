@@ -1,0 +1,1 @@
+У россиян появятся доверенные лица для подтверждения операций в банках Дмитрий Воронин https://lenta.ru/news/2024/05/21/u-rossiyan-poyavyatsya-doverennye-litsa-dlya-podtverzhdeniya-operatsiy-v-bankah/

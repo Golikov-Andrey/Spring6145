@@ -1,0 +1,1 @@
+Защита украинского полковника Матвиишина обжаловала его заочный арест в России Олеся Мицкевич https://lenta.ru/news/2024/05/21/zaschita-ukrainskogo-polkovnika-matviishina-obzhalovala-ego-zaochnyy-arest-v-rossii/
